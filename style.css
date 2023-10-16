@@ -1,0 +1,809 @@
+@import url('https://fonts.google.com/specimen/Ubuntu');
+
+  :root{
+    /* primmary color */
+    --Marine-blue: hsl(213, 96%, 18%);
+    --Purplish-blue: hsl(243, 100%, 62%);
+    --Pastel-blue: hsl(228, 100%, 84%);
+    --Light-blue: hsl(206, 94%, 87%);
+    --Strawberry-red: hsl(354, 84%, 57%);
+    
+    /* secondary color */
+    --Cool-gray: hsl(231, 11%, 63%);
+    --Light-gray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+    
+    /* Font */
+    --fs: 16px;
+    --fw-1: 400;
+    --fw-2: 500;
+    --fw-3: 700;
+    
+  }
+   
+ 
+   
+  body{
+    background: var(--Magnolia);
+    line-height: 1.2;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: var(--fs);
+   }
+    
+    .container{
+      background-color: var(--White);
+      margin: 100px auto;
+      max-width: 100%;
+      width: 850px;
+      height: 500px;
+      border-radius: 10px;
+      box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+    }
+    
+    
+    .banner{
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    
+    .sidebar{
+      margin-top: 10px;
+      width: 250px;
+      height: 480px;
+      padding-left: 20px;
+      margin-left: -40px;
+      background: url('assets/images/bg-sidebar-desktop.svg')center/cover no-repeat;
+      border-radius: 10px;
+    }
+    
+    .btn-shape{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid var(--White);
+      background: var(--Purplish-blue);
+      color: white;
+    }
+    
+    
+    
+    .space{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      top: 5px;
+      
+    }
+    
+    .space .red{
+      position: relative;
+      top: 10px;
+      right: 20px;
+      color: var(--Strawberry-red);
+    }
+    
+    
+
+    .number{
+      margin-top: 30px;
+      
+    }
+    
+    .one{
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    
+    
+    .word{
+      padding-left: 20px;
+      color: var(--White);
+      text-transform: uppercase;
+      align-items: center;
+    }
+    
+    .word p{
+      font-size: var(--fs);
+      font-weight: var(--fw-1);
+      opacity: 50%;
+    }
+    
+    .personal{
+      margin-top: 40px;
+    }
+    
+    .personal h1{
+      color: var(--Marine-blue);
+    }
+    
+    .headerWord  p{
+        opacity: 50%;
+      }
+    
+    label{
+      color: var(--Marine-blue);
+      margin-bottom: 5px;
+    }
+    
+    .label{
+      padding: 10px;
+      width: 420px;
+      outline: none;
+      border-radius: 8px;
+      border: 2px solid var(--Light-gray);
+    }
+    
+    .button{
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-30px);
+    }
+    
+    .btn-primary{
+      margin-top: 70px;
+      margin-right: 20px;
+      background: var(--Marine-blue);
+      outline: none;
+      border: 1px solid var(--Marine-blue);
+    }
+    
+    
+
+    .mobile-header,.hero,.mobile-btn{
+      display: none;
+    }
+    
+    
+    /* start of plan css */
+    /* card css */
+    .plan{
+      background-color: var(--White);
+      margin: 100px auto;
+      max-width: 100%;
+      width: 850px;
+      height: 500px;
+      border-radius: 10px;
+      box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+    }
+
+    .card{
+      width: 110px;
+      height: 150px;
+      cursor: pointer;
+    }
+    
+    .card:hover{
+      border: 2px solid var(--Purplish-blue);
+      background: var(--Magnolia);
+    }
+    
+    .card-word{
+      margin-top: 35px;
+    }
+    
+    .btn-plan{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    #btn-primary{
+      margin-top: 70px;
+      margin-right: 20px;
+      background: var(--Marine-blue);
+      outline: none;
+      border: 1px solid var(--Marine-blue);
+      color: white;
+    }
+    
+    
+    .blank{
+      margin-top: 70px;
+      margin-right: 20px;
+      opacity: 50%;
+    }
+    
+    .blank:hover{
+      color: var(--Marine-blue);
+    }
+
+    .text{
+      font-size: 11px;
+    }
+    /*  end card css */
+
+    /*  toggle btn */
+    .toggle{
+      background: var(--Alabaster);
+      margin-top: 25px;
+    }
+    
+    .switch{
+      position: relative;
+      display: inline-block;
+      height: 25px;
+      width: 55px;
+    }
+    
+
+    .switch input{
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .slider{
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--Marine-blue);
+      transition: .4s;
+    }
+    
+    .slider::before{
+      position: absolute;
+      content: '';
+      height: 20px;
+      width: 20px;
+      left: 4px;
+      bottom: 4px;
+      background: var(--White);
+      transition: .4s;
+    }
+    
+    input:checked + .slider{
+      background: var(--Marine-blue);
+    }
+    
+    input:focus + .slider{
+      box-shadow: 0 0 1px 2196f3;
+    }
+    
+    input:checked + .slider::before{
+      transform: translateX(26px);
+    }
+    
+    .slider.round{
+      border-radius: 34px;
+    }
+
+    .slider.round::before{
+      border-radius: 50%;
+      
+    }
+      
+    
+    /*  toggle btn end */
+    /* end of plan css */
+
+
+
+    /* start of AddOn css */
+      .addOn{
+      background-color: var(--White);
+      margin: 100px auto;
+      max-width: 100%;
+      width: 850px;
+      height: 500px;
+      border-radius: 10px;
+      box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+    }
+    
+    .add-on{
+      width: 450px;
+    }
+    
+    .right{
+      padding-right: 75px;
+   }
+    
+      .addOn-card{
+    max-width: 100%;
+    width: 400px;
+    cursor: pointer;
+    border: 2px solid var(--Purplish-blue);
+    height: 65px;
+    border-radius: 8px;
+   }
+   
+   
+  
+   
+   
+   .checkbox{
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--Light-gray);
+   }
+    
+    
+
+    /* end of AddOn css */
+    
+    /* Start of summary css */
+     .Sum{
+      background-color: var(--White);
+      margin: 100px auto;
+      max-width: 100%;
+      width: 850px;
+      height: 500px;
+      border-radius: 10px;
+      box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+    }
+    
+    .BackToAddon{
+        color: var(--Cool-gray);
+      }
+    
+    .mont-col,.year-col{
+      color: var(--Cool-gray);
+    }
+    
+    .arc-col{
+      color: var(--Marine-blue);
+    }
+    
+    .sum-bg{
+      background: var(--Alabaster);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    
+    .total{
+      padding: 20px 20px;
+    }
+    
+    .total h5{
+      color: var(--Purplish-blue);
+    }
+    
+    /* .Arc{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    } */
+     /* thank you */
+    .thankyou{
+      width: 450px;
+      margin-top: 13%;
+    }
+
+    .thankwords p{
+      padding-right: 30px;
+    }
+    /* end of thank you */
+    
+    
+
+    /* End of summary css */
+    
+    @media(max-width:866px){
+      .container{
+        max-width: 100%;
+        width: 500px;
+        transform: translateY(-40%);
+        height: 450px;
+      } 
+      
+      .sidebar{
+        display: none;
+      }
+      
+      .hero{
+        background: url('assets/images/bg-sidebar-mobile.svg')center/cover no-repeat;
+        display: block;
+      }
+      
+      .red{
+        display: block;
+      }
+      
+      .button{
+        transform: translateY(40px);
+      }
+      
+      .two{
+        max-height: 100%;
+        height: 200px;
+        width: 100%;
+        max-width: 100%;
+      }
+      
+      .middle{
+        display: flex;
+        justify-content: center;
+        transform: translateY(35px);
+      }
+      
+      
+      .label-one{
+        padding: 10px;
+        outline: none;
+      }
+      
+      /* start of plan css */
+      .plan{
+        max-width: 100%;
+        width: 500px;
+        transform: translateY(-40%);
+      }
+      
+      .group-card{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      
+
+      .card-body{
+        display: flex;
+        position: relative;
+        bottom: 15px;
+      }
+      
+      .yearly-plan{
+        position: absolute;
+        bottom: 0;
+        transform: translate(60px,10px);
+      }
+      
+      
+      
+      .card{
+        height: 90px;
+        width: 400px;
+      }
+      
+      .card-word{
+        margin-left: 20px;
+        margin-top: 20px;
+        transform: translateY(-10px);
+      }
+      
+      
+      
+      .plan{
+        height: 520px;
+      }
+      /* end of plan css */
+
+
+      /* start of AddOn css */
+        .addOn{
+        max-width: 100%;
+        width: 500px;
+        transform: translateY(-40%);
+        height: 420px;
+      }
+      
+      .addOn-word p{
+        opacity: 50%;
+        line-height: 1.3;
+        font-size: 20px;
+      }
+      
+      .month-text,.year-text{
+        color: var(--Purplish-blue);
+      }      
+      
+      
+      /* end of AddOn css */
+      
+      /* start of summary css */
+        .Sum{
+        max-width: 100%;
+        width: 500px;
+        transform: translateY(-40%);
+        height: 430px;
+      }
+      
+      
+      /* thank yu */
+      .thankyou{
+      margin-top: -30px;
+      text-align: center;
+      max-width: 100%;
+      width: 100%;
+      max-width: 100%;
+      
+    }
+
+    .thankbanner {
+      padding-top: 50px;
+      transform: translateY(40px);
+    }
+
+      .thankwords p{
+      padding: 10px;
+    }
+      
+      
+      
+      
+      /* end of summary css */
+      
+      
+      
+    }
+    
+    @media(max-width:375px){
+      
+      
+      .label{
+        max-width: 100%;
+        width: 335px;
+      }
+      
+      .headerWord p{
+        padding-right: 50px;
+      }
+
+      .checkbox-text h6{
+      font-size: 11px;
+    }
+
+    .checkbox-text p{
+      font-size: 10px;
+    }
+    }
+
+    @media(max-width:414px){
+      
+      .container{
+        width: 365px;
+      }
+      
+      .label{
+        max-width: 100%;
+        width: 335px;
+      }
+      
+      .headerWord p{
+        padding-right: 50px;
+      }
+      
+      .plan{
+        width: 360px;
+      }
+      
+      .card-profile{
+        overflow: hidden;
+        max-width: 100%;
+        padding-left: 30px;
+      }
+      
+      
+      
+      .card{
+        width: 300px;
+      }
+      
+      /* start on AddOn css */
+        .add-on{
+        width: 350px;
+      }
+        
+        .addOn{
+          width: 400px;
+        }
+
+        .checkbox-text h6{
+      font-size: 13px;
+    }
+
+      .checkbox-text p{
+      font-size: 12px;
+    }
+      /* end on AddOn css */
+      
+      /* start of summary */
+      .Sum{
+          max-width: 100%;
+          width: 360px;
+        }
+        
+        .sum{
+          width: 320px;
+        }
+
+      /* end of summary */
+      
+      
+    }
+    
+    
+    
+    
+    /* js work */
+
+    /* form js */
+    
+    .show .input-field{
+      border: 2px solid var(--Strawberry-red);
+    }
+    
+    .red{
+      display: none;
+    }
+    
+    .show .red{
+      display: block;
+    }
+    
+    /* end of form js */
+
+    /* plan js */
+    .plan{
+      display: none;
+    }
+    
+    .plan.next{
+      display: block;
+    }
+    
+    .container.next{
+      display: none;
+    }
+    
+    /* inside the Go back button */
+    .container.back{
+      display: block;
+    }
+    
+    .plan.back{
+      display: none;
+    }
+    
+    .show-yearly .card-text{
+      display: none;
+    }
+    
+    .card.hover{
+      background: var(--Magnolia);
+      border: 2px solid var(--Purplish-blue);
+    }
+    
+    .yearly-plan{
+      display: none;
+    } 
+    
+    
+    
+    .show-yearly.yearly-plan{
+      display: block;
+    }    
+    
+    
+    /*end of plan js */
+    
+    
+    /* start of AddOn js */
+    .year-plan{
+      display: none;
+    }
+    
+    
+    .show-text.month-text{
+      display: none;
+    }
+    
+    .show-text.year-plan{
+      display: block;
+    }
+    
+    
+    
+    .addOn{
+      display: none;
+    }
+    
+    .addOn.next{
+      display: block;
+    }
+    
+    .addOn-card.hover{ 
+      background: var(--Magnolia);
+    }
+    
+    .addOn-card:hover{
+      background: var(--Magnolia);
+    }
+    /* end of AddOn js */
+    
+    
+    /* Start of Summary */
+    
+     /* insert in Showtext in puthere */
+    .Sum{
+      display: none;
+    }
+    
+    .Sum.next{
+      display: block;
+    }
+    
+    .yearly{
+      display: none;
+    }
+    
+    .show-text.month{
+      display: none;
+    }
+    
+    
+    /* Hard code */
+    
+    .plan-yearly{
+      display: none;
+    }
+
+    .show-text.plan-month{
+      display: none;
+    }
+
+    .show-text.plan-yearly{
+      display: block;
+    }
+    
+    
+    .arc-one,.arc-two,.arc-three{
+      display: none;
+    } 
+    
+    .active.arc-one,.active.arc-two,.active.arc-three{
+      display: block;
+    } 
+
+    
+    
+    
+    .online,.larger,.customizable{
+      display: none;
+    }
+    
+    .active.online,.active.larger,.active.customizable{
+      display: block;
+    }
+    
+    
+    /* add show to whynotshow */
+    /* thank yu */
+    .thankyou{
+      display: none;
+    }
+    
+    .show.thankyou{
+      display: block;
+    }
+    
+    
+    
+    .show.sum{
+      display: none;
+    }
+    
+    .show.mobile-btn{
+    display: none;
+  }
+
+    /* End of Summary */
+    
+    
+
+
+
+
+
+
+
+
+

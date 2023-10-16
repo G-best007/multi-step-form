@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+  <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.css">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="everything">
+    <!-- mobile header -->
+    <div class="hero">
+      <div class="two">
+        <div class="middle">
+          <a href="index.html"><button type="button" class="btn-shape btn-one mx-3">1</button></a>
+          <button type="button" class="btn-shape btn-two mx-3">2</button>
+          <button type="button" class="btn-shape btn-three mx-3">3</button>
+          <button type="button" class="btn-shape btn-four mx-3">4</button>
+        </div>
+      </div>
+    </div>
+    <!-- end of mobile header -->
+
+      <section class="container next">
+        <div class="banner">
+          <!-- side bar -->
+          <sidebar class="sidebar bar">
+            <div class="number">
+              <div class="one">
+                <a href="index.html"><button type="button" class="btn-shape Btn-one">1</button></a>
+                <div class="word">
+                  <p class="mb-1">Step 1</p>
+                  <h6>Your Info</h6>
+                </div>
+              </div>
+              <div class="one">
+                <button type="button" class="btn-shape">2</button>
+                <div class="word">
+                  <p class="mb-1">Step 2</p>
+                  <h6>Select Plan</h6>
+                </div>
+              </div>
+              <div class="one">
+                <button type="button" class="btn-shape">3</button>
+                <div class="word">
+                  <p class="mb-1">Step 3</p>
+                  <h6>Add-Ons</h6>
+                </div>
+              </div>
+              <div class="one">
+                <button type="button" class="btn-shape">4</button>
+                <div class="word">
+                  <p class="mb-1">Step 4</p>
+                  <h6>Summary</h6>
+                </div>
+              </div>
+            </div>
+          </sidebar>
+          <!-- End of sidebar -->
+      
+          <div class="personal">
+            <!-- Info -->
+            <div class="headerWord">
+              <h1>Personal Info</h1>
+              <p>Please provide your name, email address, and phone number.</p>
+            </div>
+            <!-- input -->
+      
+            <form action="" class="form">
+      
+      
+              <div class="reg-one">
+                <div class="space">
+                  <label for="name">Name</label>
+                  <p class="red">This field is required</p>
+                </div>
+                <input type="text" name="name" id="name label" class="label input-field input-one"
+                  placeholder="e.g. Stephen King"> <br><br>
+              </div>
+
+              <div class="reg-two">
+                <div class="space">
+                  <label for="name">Email Address</label>
+                  <p class="red">This field is required</p>
+                </div>
+                <input type="email" name="email" id="email label" placeholder="e.g. stephenking@lorem.com"
+                  class="label input-field input-two"> <br><br>
+              </div>
+      
+              <div class="reg-three">
+                <div class="space">
+                  <label for="name">Phone Number</label>
+                  <p class="red">This field is required</p>
+                </div>
+                <input type="tel" name="tel" id="number label" placeholder="e.g. +1 234 567 890"
+                  class="label input-field input-three">
+              </div>
+      
+      
+      
+      
+      
+      
+              <div class="button">
+                <div class="nothing"></div>
+                <button type="submit" class="btn btn-primary">Next Step</button>
+              </div>
+            </form>
+      
+            <!-- end of input -->
+            <!-- end of info -->
+      
+          </div>
+        </div>
+      </section>
+      
+      
+      <!--  start of plan-->
+      <section class="plan next">
+        <div class="banner">
+          <!-- side bar -->
+          <sidebar class="sidebar bar">
+            <div class="number">
+              <div class="one">
+                <a href="index.html"><button type="button" class="btn-shape">1</button></a>
+                <div class="word">
+                  <p class="mb-1">Step 1</p>
+                  <h6>Your Info</h6>
+                </div>
+              </div>
+              <div class="one">
+                <button type="button" class="btn-shape Btn-two">2</button>
+                <div class="word">
+                  <p class="mb-1">Step 2</p>
+                  <h6>Select Plan</h6>
+                </div>
+              </div>
+              <div class="one">
+                <button type="button" class="btn-shape">3</button>
+                <div class="word">
+                  <p class="mb-1">Step 3</p>
+                  <h6>Add-Ons</h6>
+                </div>
+              </div>
+              <div class="one">
+                <button type="button" class="btn-shape">4</button>
+                <div class="word">
+                  <p class="mb-1">Step 4</p>
+                  <h6>Summary</h6>
+                </div>
+              </div>
+            </div>
+          </sidebar>
+          <!-- End of sidebar -->
+      
+          <!-- start of card -->
+          <div class="card-profile my-5 pe-5 ">
+            <div class="heading text-capitalize mb-4">
+              <h2>select your plan</h2>
+              <p class="opacity-50">you have the option of monthly and yearly billing</p>
+            </div>
+            <!-- 3 card -->
+            <div class="group-card d-flex align-items-center justify-content-between">
+              <div class="card card-one">
+                <div class="card-body">
+                  <img src="/assets/images/icon-arcade.svg" alt="" class="image">
+                  <div class="Arcade card-word">
+                    <h6 class="mb-0">Arcade</h6>
+                    <p class="card-text opacity-50 monthly-plan">$9/mo</p>
+                  </div>
+                  <div class="yearly-plan">
+                    <p class="opacity-50 mb-0">$90/yr</p>
+                    <p class="fw-bold text">2 months free</p>
+                  </div>
+                </div>
+              </div> 
+                <div class="card card-two">
+                <div class="card-body">
+                  <img src="/assets/images/icon-advanced.svg" alt="">
+                  <div class="advance card-word">
+                    <h6 class="mb-0">Advance</h6>
+                    <p class="card-text opacity-50 monthly-plan">$12/mo</div>
+                  <div class="yearly-plan">
+                    <p class="opacity-50 mb-0">$120/yr</p>
+                    <p class="fw-bold text">2 months free</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card card-three">
+                <div class="card-body">
+                  <img src="/assets/images/icon-pro.svg" alt="">
+                  <div class="pro card-word">
+                    <h6 class="mb-0">Pro</h6>
+                    <p class="card-text opacity-50 monthly-plan">$15/mo</p>
+                  </div>
+                  <div class="yearly-plan">
+                    <p class=" opacity-50 mb-0">$150/yr</p>
+                    <p class="fw-bold text">2 months free</p>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <!-- end of 3 card -->
+            <!-- toggle button -->
+            <div class="toggle d-flex align-items-center justify-content-around">
+              <h5 class="ps-3">monthly</h5>
+              <!-- rounded switch -->
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+              <!-- end of rounded switch -->
+              <h5 class="pe-3">yearly</h5>
+            </div>
+            <!-- end oftoggle button -->
+            <div class="btn-plan">
+              <button class="btn blank index">Go Back</button>
+              <button class="btn Nexttoaddon" id="btn-primary">Next Step</button>
+            </div>
+          </div>
+          <!-- end of card -->
+        </div>
+      
+      </section>
+      <!--  end of plan-->
+
+      
+      
+      <!-- start of AddOn -->
+      <section class="addOn">
+        <div class="banner">
+          <!-- side bar -->
+          <sidebar class="sidebar bar">
+            <div class="number">
+              <div class="one">
+                <a href="index.html"><button type="button" class="btn-shape">1</button></a>
+                <div class="word">
+                  <p class="mb-1">Step 1</p>
+                  <h6>Your Info</h6>
+                </div>
+              </div>
+              <div class="one">
+                <button type="button" class="btn-shape">2</button>
+                <div class="word">
+                  <p class="mb-1">Step 2</p>
+                  <h6>Select Plan</h6>
+                </div>
+              </div>
+              <div class="one">
+                <button type="button" class="btn-shape Btn-three">3</button>
+                <div class="word">
+                  <p class="mb-1">Step 3</p>
+                  <h6>Add-Ons</h6>
+                </div>
+              </div>
+              <div class="one">
+                <button type="button" class="btn-shape">4</button>
+                <div class="word">
+                  <p class="mb-1">Step 4</p>
+                  <h6>Summary</h6>
+                </div>
+              </div>
+            </div>
+          </sidebar>
+          <!-- End of sidebar -->
+      
+          <!-- start of addOn -->
+          <div class="add-on my-5 pe-5">
+            <div class="addOn-word mb-4">
+              <h2>Pick add-ons</h2>
+              <p class="opacity-50">Add-ons help enhance your gaming experience.</p>
+            </div>
+            <!-- Add on -->
+            <div class="addOn-card my-3">
+              <div class="body-card">
+                <div class="card-words d-flex align-items-center justify-content-between my-2">
+                  <div class="checkbox-container d-flex align-items-center"  >
+                    <input type="checkbox" class="checkbox checkBox-one ms-3" data-Set="1" data-Id="10">
+                    <div class="checkbox-text ps-3">
+                      <h6 class="mb-0">Online service</h6>
+                      <p class="card-text opacity-50 monthly-plan">Access to multiplayer games</p>
+                    </div>
+                  </div>
+                  <p class="my-2 month-text pe-3" >+$1/mo</p>
+                  <div class="year-plan">
+                    <p class="year-text my-2 pe-3">+$10/yr</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="addOn-card my-3"  >
+              <div class="body-card" >
+                <div class="card-words d-flex align-items-center justify-content-between my-2">
+                  <div class="checkbox-container d-flex align-items-center " >
+                    <input type="checkbox" class="checkbox checkBox-two ms-3" data-Set="2" data-Id="20">
+                    <div class="checkbox-text ps-3">
+                      <h6 class="mb-0">Larger storage</h6>
+                      <p class="card-text opacity-50 monthly-plan">Extra 1TB of cloud save</p>
+                    </div>
+                  </div>
+                  <p class="my-2 month-text pe-3">+$2/mo</p>
+                  <div class="year-plan">
+                    <p class="year-text my-2 pe-3">+$20/yr</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="addOn-card" >
+              <div class="body-card">
+                <div class="card-words d-flex align-items-center justify-content-between my-2" >
+                  <div class="checkbox-container d-flex align-items-center">
+                    <input type="checkbox" class="checkbox checkBox-three ms-3" data-Set="2" data-Id="20">
+                    <div class="checkbox-text ps-3">
+                      <h6 class="mb-0">Customizable profile</h6>
+                      <p class="card-text opacity-50 monthly-plan">customize theme on your profile</p>
+                    </div>
+                  </div>
+                  <p class="my-2 month-text pe-3">+$2/mo</p>
+                  <div class="year-plan">
+                    <p class="year-text my-2 pe-3">+$20/yr</p> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end pf Add on -->
+            <!-- button -->
+            <div class="button">
+              <button class="btn blank Blank">Go Back</button>
+              <button class="btn btn-primary nexttosum">Next Step</button>
+            </div>
+            <!-- end of button -->
+          </div>
+          <!-- end of addOn -->
+        </div>
+      
+      </section>
+      <!-- end of AddOn -->
+
+      
+      
+      <!-- start of summary -->
+      <section class="Sum">
+        <div class="banner">
+          <!-- side bar -->
+          <sidebar class="sidebar bar">
+            <div class="number">
+              <div class="one">
+                <a href="index.html"><button type="button" class="btn-shape">1</button></a>
+                <div class="word">
+                  <p class="mb-1">Step 1</p>
+                  <h6>Your Info</h6>
+                </div>
+              </div>
+              <div class="one">
+                <button type="button" class="btn-shape">2</button>
+                <div class="word">
+                  <p class="mb-1">Step 2</p>
+                  <h6>Select Plan</h6>
+                </div>
+              </div>
+              <div class="one">
+                <button type="button" class="btn-shape">3</button>
+                <div class="word">
+                  <p class="mb-1">Step 3</p>
+                  <h6>Add-Ons</h6>
+                </div>
+              </div>
+              <div class="one">
+                <button type="button" class="btn-shape Btn-four">4</button>
+                <div class="word">
+                  <p class="mb-1">Step 4</p>
+                  <h6>Summary</h6>
+                </div>
+              </div>
+            </div>
+          </sidebar>
+          <!-- End of sidebar -->
+      
+          <div class="whynotshow">
+            <div class="sum my-5 pe-5">
+              <div class="sum-word mb-4">
+                <h2>Finishing up</h2>
+                <p class="opacity-50">Double-check everything looks OK before confirming.</p>
+              </div>
+              <!-- summary -->
+              <div class="puthere">
+                <div class="sum-bg">
+                  <div class="arcade">
+                    <div class="sum-one">
+                      <div class="arc-one">
+                        <div class="d-flex justify-content-between align-content-center">
+                          <h6 class="month plan-month">Arcade (Monthly)</h6>
+                          <h6 class="yearly plan-yearly">Arcade (Yearly)</h6>
+                          <h6 class="month plan-month price">$9/mo</h6>
+                          <h6 class="yearly plan-yearly price">$90/yr</h6>
+                        </div>
+                      </div>
+                    </div>
+                     <div class="sum-two">
+                      <div class="arc-two">
+                        <div class="d-flex justify-content-between align-content-center">
+                          <h6 class="month plan-month">Advance (Monthly)</h6>
+                          <h6 class="yearly plan-yearly">Advance (Yearly)</h6>
+                          <h6 class="month plan-month price">$12/mo</h6>
+                          <h6 class="yearly plan-yearly price">$120/yr</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sum-three">
+                    <div class="arc-three">
+                      <div class="d-flex justify-content-between align-content-center">
+                        <h6 class="month plan-month">Pro (Monthly)</h6>
+                        <h6 class="yearly plan-yearly">Pro (Yearly)</h6>
+                        <h6 class="month plan-month price">$15/mo</h6>
+                        <h6 class="yearly plan-yearly price">$150/yr</h6>
+                      </div>
+                    </div>
+                    </div> 
+                    
+                  </div>
+                  <a href="#" class="BackToAddon">Change</a>
+                  <hr>
+                  <div class="Online">
+                  <div class="online">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <p class="opacity-50">Online service</p>
+                      <p class="month plan-month">$1/mo</p>
+                      <p class="yearly plan-yearly">$10/yr</p>
+                    </div>
+                  </div>
+                  </div>
+                  
+                  <div class="Larger">
+                  <div class="larger">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <p class="opacity-50">Larger storage</p>
+                      <p class="month plan-month">$2/mo</p>
+                      <p class="yearly plan-yearly">$20/yr</p>
+                    </div>
+                  </div>
+                  </div>
+                  
+                  <div class="Customizable">
+                    <div class="customizable">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <p class="opacity-50">Customizable profile</p>
+                        <p class="month plan-month">$2/mo</p>
+                        <p class="yearly plan-yearly">$20/yr</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="total">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p class="month plan-month">Total (per month)</p>
+                    <p class="yearly plan-yearly">Total (per year)</p>
+                    <h5 class="month plan-month ps-3 sumMonth">$12/mo</h5> 
+                    <h5 class="yearly plan-yearly sumYear">$120/yr</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- end summary -->
+              <!-- button -->
+              <div class="button pb-3">
+                <button class="btn blank backtoaddon">Go Back</button>
+                <button class="btn btn-primary showThankYou">Confirm</button>
+              </div>
+              <!-- end of button -->
+            </div>
+            <!-- end of addOn -->
+            <!-- Thank you page -->
+            <div class="thankyou text-center">
+              <div class="thankbanner">
+                <div class="thankImage">
+                  <img src="./assets/images/icon-thank-you.svg" class="my-3" alt="">
+                </div>
+                <div class="thankwords">
+                  <h1 class="my-2">Thank You!</h1>
+                  <p>Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need
+                    support, please
+                    feel free to email us at support@loremgaming.com</p>
+                </div>
+              </div>
+            </div>
+            <!--end Thank you page -->
+          </div>
+          <!-- start of addOn -->
+        </div>
+      
+      </section>
+      <!-- End of summary -->
+      
+  </div>
+  
+  
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">G-best</a>.
+  </div>
+  <script src="style.js"></script>
+  <script src="bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+
